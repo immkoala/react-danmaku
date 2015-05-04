@@ -1,3 +1,3 @@
-var Danmaku = require('./src/Danmaku.jsx')
+var Danmaku = require('./src/Danmaku.js')
 
 module.exports = Danmaku

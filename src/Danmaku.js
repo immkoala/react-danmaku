@@ -11,6 +11,7 @@ var styles = {
 }
 
 var Danmaku = React.createClass({
+    displayName: "Danmaku",
 
     statics: {
         getDefaultData: function () {
@@ -63,7 +64,7 @@ var Danmaku = React.createClass({
     render: function () {
 
         return (
-            <canvas ref='canvas' style={styles.canvas}></canvas>
+            React.createElement("canvas", {ref: "canvas", style: styles.canvas})
         )
     },
 
