@@ -1,0 +1,15 @@
+{
+  "name": "react-dammaku",
+  "version": "0.0.1",
+  "description": "a comment curtain for React",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:immkoala/react-dammaku.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
