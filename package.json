@@ -1,6 +1,6 @@
 {
   "name": "react-danmaku",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a comment curtain for React",
   "main": "index.js",
   "repository": {
@@ -11,5 +11,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }

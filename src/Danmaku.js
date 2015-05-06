@@ -345,16 +345,16 @@ var Danmaku = React.createClass({
 
     _assignmentData: function () {
 
-        //如果存在data,通过data初始化数据
-        if (this.props.data && this.props.data.length) {
-            this.props.data.forEach(function (text) {
-                this.danmakuInstance.addChild({
-                    text: text
-                })
-            }.bind(this))
+        var data = this.props.data || Danmaku.getDefaultData()
 
-            this.danmakuInstance.play() //开始滚动弹幕
-        }
+        //如果存在data,通过data初始化数据
+        data.forEach(function (text) {
+            this.danmakuInstance.addChild({
+                text: text
+            })
+        }.bind(this))
+
+        this.danmakuInstance.play() //开始滚动弹幕
     },
 
     componentDidUpdate: function () { // 更新data时重新进行初始化数据
