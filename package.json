@@ -10,6 +10,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "react",
+    "react-component",
+    "retina"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {}

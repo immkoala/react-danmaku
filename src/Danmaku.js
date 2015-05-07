@@ -168,7 +168,7 @@ var Danmaku = React.createClass({
 
             getRenderLineNumber: function () {
 
-                var lineNumber = Math.ceil(this.children.length / 4) //将要渲染的行数
+                var lineNumber = Math.ceil(this.children.length / 3) //将要渲染的行数
 
                 if (lineNumber > this.renderMatrix.length) {
                     lineNumber = this.renderMatrix.length
@@ -331,12 +331,12 @@ var Danmaku = React.createClass({
         this.danmakuInstance = new danmaku({
             width: canvasNode.width,
             height: canvasNode.height,
-            color: '#000',
-            fontSize: '20px',
-            speed: 10,
-            alpha: 0.8,
-            lineSpacing: 5
-        }, canvasNode, this)
+            color: this.props.config.color,
+            fontSize: this.props.config.fontSize,
+            speed: this.props.config.speed,
+            alpha: this.props.config.alpha,
+            lineSpacing: this.props.config.lineSpacing
+        }, canvasNode, this);
 
         //赋值
         this._assignmentData()
