@@ -4,7 +4,7 @@
 react danmaku component
 
 ## Install
-`npm install react－danmaku`
+`npm install react-danmaku`
 
 ## Usage
 
